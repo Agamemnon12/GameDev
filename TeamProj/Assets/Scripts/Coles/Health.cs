@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
     { 
         health = healthMax;
         isDead = false;
+        slider.value = health / healthMax;
         if (gameObject.tag == "Player")
         {
             //slider.value = 1;

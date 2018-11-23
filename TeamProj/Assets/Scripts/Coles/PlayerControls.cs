@@ -43,7 +43,7 @@ public class PlayerControls : MonoBehaviour
         {
             //Check if we are on the ground right now
             GameObject feet = transform.GetChild(0).gameObject;
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(feet.transform.position, 10f);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(feet.transform.position, 0.5f);
             foreach (Collider2D col in colliders)
             {
                 //Don't jump off ourselves
@@ -52,7 +52,7 @@ public class PlayerControls : MonoBehaviour
 
                     rb.velocity = new Vector2(rb.velocity.x, 0);//Ignore previous falling velocity so we jump the full amount each time.
                                         
-                    rb.AddForce(Vector2.up * 300);
+                    rb.AddForce(Vector2.up * 400);
 
                     break;
                 }

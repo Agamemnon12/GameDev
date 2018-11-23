@@ -3,7 +3,9 @@ guid: d60f7c24131559e43b47558a08baa8fd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - redLaser: {fileID: 1747848998918796, guid: e76e9d25ace2a644eaf5dea7b642ee62, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
