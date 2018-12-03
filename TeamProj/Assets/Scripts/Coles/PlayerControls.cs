@@ -133,7 +133,7 @@ public class PlayerControls : MonoBehaviour
         Debug.Log(respawns);
         if (respawns == 3)
         {
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
